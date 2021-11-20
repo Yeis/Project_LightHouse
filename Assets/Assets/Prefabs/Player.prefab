@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 3357092361426684943}
   - component: {fileID: 3357092361426684940}
   - component: {fileID: 3357092361426684941}
+  - component: {fileID: 5230970469673170543}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -189,6 +190,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 3357092361426684940}
   speed: 12
+  groundCheck: {fileID: 0}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  gravity: -9.81
+--- !u!136 &5230970469673170543
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3357092361426685170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.71
+  m_Height: 3.83
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3357092361914977086
 GameObject:
   m_ObjectHideFlags: 0
