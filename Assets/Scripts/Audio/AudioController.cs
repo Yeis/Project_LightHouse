@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
-    //Clips
-    public AudioClip monsterClip;
+  
 
     private AudioSource audioSource;
     // Start is called before the first frame update
@@ -14,12 +13,13 @@ public class AudioController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public bool IsPlaying(AudioClip audioClip) {
+        return audioSource.clip == audioClip && audioSource.isPlaying;
     }
 
-    public void PlayMonsterClip() {
-        audioSource.PlayOneShot(monsterClip, 0.5f);
-    }}
+    public void PlayAudioClip(AudioScriptableObject audio) {
+        audioSource.clip = audio.audioClip;
+        audioSource.PlayOneShot(audio.audioClip, audio.volume);
+    }
+
+}
