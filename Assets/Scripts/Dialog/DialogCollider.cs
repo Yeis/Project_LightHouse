@@ -20,6 +20,7 @@ public class DialogCollider : MonoBehaviour
         {
             print("DialogueCollider");
             eventController.AddEvent(new DialogueEvent(dialog));
+            isActive = false;
         }
     }
 }

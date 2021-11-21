@@ -15,7 +15,7 @@ namespace DreamTeam.Lighthouse.Core.Events
         void Start()
         {
             manager = new EventManager();
-          // manager.AddEvent(new DialogueEvent(introDialog));
+            manager.AddEvent(new DialogueEvent(introDialog));
             t = 0.0f;
         }
 

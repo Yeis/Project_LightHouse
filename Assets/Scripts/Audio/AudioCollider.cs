@@ -22,6 +22,7 @@ public class AudioCollider : MonoBehaviour
         {
             print("AudioCollider");
             eventController.AddEvent(new AudioEvent(audioScriptableObject));
+            isActive = false;
         }
     }
 }
