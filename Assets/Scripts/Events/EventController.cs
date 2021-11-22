@@ -7,7 +7,7 @@ namespace DreamTeam.Lighthouse.Core.Events
     public class EventController : MonoBehaviour
     {
         public float secondsBetweenReview;
-        public DialogScriptableObject introDialog;
+        public List<DialogScriptableObject> introDialogs;
         private EventManager manager;
 
         private float t;
@@ -15,7 +15,11 @@ namespace DreamTeam.Lighthouse.Core.Events
         void Start()
         {
             manager = new EventManager();
-            manager.AddEvent(new DialogueEvent(introDialog));
+            for (int i = 0; i < introDialogs.Count; i++)
+            {
+                manager.AddEvent(new DialogueEvent(introDialogs[i]));
+
+            }
             t = 0.0f;
         }
 
