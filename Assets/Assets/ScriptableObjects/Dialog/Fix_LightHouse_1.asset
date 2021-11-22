@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b29fca0cd1e7134d8e4f9e8ec8842ae, type: 3}
-  m_Name: Scared_1
+  m_Name: Fix_LightHouse_1
   m_EditorClassIdentifier: 
   sentences:
-  - 'What in the seven seas was that!!!! '
-  textSpeed: 0.1
-  timeBetweenLines: 2
-  fontAsset: {fileID: 11400000, guid: d51dbe9c698cd354cb36061ce4546181, type: 2}
-  fontSize: 32
-  hasEnded: 1
+  - "But it is my family\u2019s duty "
+  - "Nobody should get lost, it doesn\u2019t matter the time. "
+  textSpeed: 0.06
+  timeBetweenLines: 1
+  fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}
+  fontSize: 28
+  hasEnded: 0

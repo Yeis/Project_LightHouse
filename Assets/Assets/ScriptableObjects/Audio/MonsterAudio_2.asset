@@ -9,13 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b29fca0cd1e7134d8e4f9e8ec8842ae, type: 3}
-  m_Name: Voice_1
+  m_Script: {fileID: 11500000, guid: 89816120e6a09ec4a83b870ae2a8770c, type: 3}
+  m_Name: MonsterAudio_2
   m_EditorClassIdentifier: 
-  sentences:
-  - 'You have to end it, you must '
-  textSpeed: 0.1
-  timeBetweenLines: 2
-  fontAsset: {fileID: 11400000, guid: 8c2ba8e31d35f174ca5921aca1502cd5, type: 2}
-  fontSize: 40
-  hasEnded: 1
+  audioClip: {fileID: 8300000, guid: 77187fad3f5e49543820f50aff48f701, type: 3}
+  volume: 0.5
