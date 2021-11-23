@@ -14,7 +14,7 @@ public class BoatController : MonoBehaviour, Interactable {
 
     }
 
-    public void InteractWith() {
+    public void InteractWith(GameObject player) {
         Debug.Log(transform.position.x);
         player.transform.position = this.transform.position;
     }

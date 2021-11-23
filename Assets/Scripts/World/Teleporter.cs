@@ -2,26 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Teleporter : MonoBehaviour
+public class Teleporter : MonoBehaviour, Interactable
 {
 
-    public GameObject pointsTo;
-    public bool isActive;
+    public Transform pointsTo;
 
-
-    private void OnTriggerEnter(Collider other)
+    public void InteractWith(GameObject player)
     {
-        print("Detectamos algo");
-        if(other.gameObject.tag == "Player" && isActive) {
-           CharacterController cc =  other.gameObject.GetComponent<CharacterController>();
-           cc.enabled = false;
-           other.gameObject.transform.position = pointsTo.transform.position;
-           cc.enabled = true;
-        }
+        CharacterController cc = player.GetComponent<CharacterController>();
+        cc.enabled = false;
+        player.gameObject.transform.position = pointsTo.position;
+        cc.enabled = true;
     }
-
-    private void OnTriggerExit(Collider other) {
-        isActive= !isActive;
-    }
-
 }

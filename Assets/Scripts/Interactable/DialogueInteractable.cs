@@ -13,7 +13,7 @@ public class DialogueInteractable : MonoBehaviour, Interactable
         eventController = GameObject.FindGameObjectWithTag("EventController").GetComponent<EventController>();
     }
 
-    public void InteractWith()
+    public void InteractWith(GameObject player)
     {
         Debug.Log("Interacting with Note");
         eventController.AddEvent(new DialogueEvent(dialog));

@@ -23,7 +23,7 @@ public class InteractController : MonoBehaviour {
         if (HasItemTargetted()) {
             interactTextRoot.gameObject.SetActive(true);
             if (Input.GetButton("Submit")) {
-                pickUpItem.InteractWith();
+                pickUpItem.InteractWith(gameObject);
             }
         } else {
             interactTextRoot.gameObject.SetActive(false);
