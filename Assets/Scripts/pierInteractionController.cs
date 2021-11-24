@@ -23,6 +23,7 @@ public class pierInteractionController : MonoBehaviour, Interactable {
         //stop boat
         Rigidbody boatBody = boat.GetComponent<Rigidbody>();
         boatBody.velocity = new Vector3(0, 0, 0);
+        boatBody.rotation = Quaternion.identity;
 
         player.transform.parent = null;
         player.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y + 4, transform.localPosition.z);

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3833297845715502859}
   - component: {fileID: 7334355179726450737}
   - component: {fileID: 7626801017578002931}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8590899157275770187}
   - component: {fileID: 6005648172231291198}
   - component: {fileID: 3705733990406797516}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fix_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 5840934670273603511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.50000006}
   m_Children:
   - {fileID: 7808112924402643982}
   - {fileID: 3833297845715502859}
@@ -163,6 +163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonNumber: 0
   lightHouseLight: {fileID: 0}
+  dialogs: []
+  audios: []
 --- !u!1 &7882299243793355324
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +176,7 @@ GameObject:
   - component: {fileID: 7808112924402643982}
   - component: {fileID: 1755943098889440820}
   - component: {fileID: 6672214613432037326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}

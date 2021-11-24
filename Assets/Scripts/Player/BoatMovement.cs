@@ -16,7 +16,6 @@ public class BoatMovement : MonoBehaviour {
 
     void Update() {
         movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        print(movement);
         //We are not pressing any button so we should deaccelerate
         if (movement.z == 0) {
             print("Not Moving");
