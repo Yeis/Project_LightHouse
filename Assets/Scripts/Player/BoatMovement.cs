@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BoatMovement : MonoBehaviour {
     public float acceleration = 30.0f;
+    public float desAccelerationFactor = 3.0f;
     public float rotationSpeed = 5.0f;
     public float minimumSpeed = 0.0f, maximumSpeed = 200.0f, currentSpeed;
     private Vector3 movement;
@@ -17,22 +18,28 @@ public class BoatMovement : MonoBehaviour {
     void Update() {
         movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         //We are not pressing any button so we should deaccelerate
-        if (movement.z == 0) {
-            print("Not Moving");
-            currentSpeed = Mathf.Max(minimumSpeed, currentSpeed - (acceleration * Time.deltaTime));
-        } else {
+        // if (movement.z == 0) {
+        //     print("Not Moving");
+        //     currentSpeed = Mathf.Max(minimumSpeed, currentSpeed - (acceleration * Time.deltaTime));
+        // } else {
+        //     currentSpeed = Mathf.Min(maximumSpeed, currentSpeed + (acceleration * Time.deltaTime));
+        // }
+        if (movement.z > 0.0)
+        {
             currentSpeed = Mathf.Min(maximumSpeed, currentSpeed + (acceleration * Time.deltaTime));
         }
-
+        else
+        {
+            currentSpeed = Mathf.Max(minimumSpeed, currentSpeed - (desAccelerationFactor * acceleration * Time.deltaTime));
+        }
     }
 
     void FixedUpdate() {
-        if (movement.z > 0.0f) {
-            rigidbody.velocity = transform.right * currentSpeed * Time.fixedDeltaTime;
-        }
-        if (movement.z < 0.0f) {
-            rigidbody.velocity = -transform.right * currentSpeed * Time.fixedDeltaTime;
-        }
+        // if (movement.z > 0.0f) {
+            // rigidbody.velocity = transform.right * currentSpeed * Time.fixedDeltaTime;
+        // }
+        rigidbody.velocity = transform.right * currentSpeed * Time.fixedDeltaTime;
+
 
         if (movement.x > 0.0f) {
             //Rotate the sprite about the Y axis in the positive direction

@@ -53,4 +53,9 @@ public class TurnOnLightHouse : MonoBehaviour, Interactable
 
         // }
     }
+
+    public string GetInteractionText()
+    {
+        return "Press E to Fix LightHouse";
+    }
 }
