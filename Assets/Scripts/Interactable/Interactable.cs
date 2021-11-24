@@ -4,4 +4,5 @@ using UnityEngine;
 
 public interface Interactable {
     void InteractWith(GameObject player);
+    string GetInteractionText();
 }

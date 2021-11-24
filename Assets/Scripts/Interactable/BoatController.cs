@@ -33,4 +33,9 @@ public class BoatController : MonoBehaviour, Interactable {
         pier.layer = 7;
         movementController.enabled = true;
     }
+
+    public string GetInteractionText() {
+        return "Get on boat";
+    }
+
 }

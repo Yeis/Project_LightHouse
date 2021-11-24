@@ -39,7 +39,7 @@ public class InteractController : MonoBehaviour {
             var hitItem = hitInfo.collider.GetComponent<Interactable>();
             if (hitItem == null) { pickUpItem = null; } else if (hitItem != null && hitItem != pickUpItem) {
                 pickUpItem = hitItem;
-                interactText.text = "Press 'E' to get on the boat";
+                interactText.text = pickUpItem.GetInteractionText();
             }
         } else {
             pickUpItem = null;

@@ -37,4 +37,9 @@ public class pierInteractionController : MonoBehaviour, Interactable {
         movementController.enabled = false;
 
     }
+
+    public string GetInteractionText() {
+        return "Get off";
+    }
+
 }
