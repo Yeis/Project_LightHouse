@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1273678366353991488}
   - component: {fileID: 2738989209547057381}
   - component: {fileID: 136848951478246447}
-  - component: {fileID: 1596449946265913661}
-  m_Layer: 0
+  - component: {fileID: 834569429}
+  - component: {fileID: 834569432}
+  m_Layer: 6
   m_Name: Pier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938468777885793786}
-  m_LocalRotation: {x: -0, y: -0.7196778, z: -0, w: 0.6943083}
+  m_LocalRotation: {x: 0, y: -0.7196792, z: 0, w: 0.69430685}
   m_LocalPosition: {x: -554.38, y: 2.17, z: -168.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -84,8 +85,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1596449946265913661
-MeshCollider:
+--- !u!65 &834569429
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +95,21 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4366381365526384294, guid: 0a79b6d980bba7a44936149050d38359, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 8.30946, y: 5.6444306, z: 21.674438}
+  m_Center: {x: 2.601193, y: -2.4539897, z: 1.3728523}
+--- !u!114 &834569432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938468777885793786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492c98bfbae4ba74fbe2bf979ced8fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  movementController: {fileID: 0}
+  boat: {fileID: 0}

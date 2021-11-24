@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
-{
+public class PlayerMovement : MonoBehaviour {
     public CharacterController controller;
     public float speed = 12;
     public Transform groundCheck;
@@ -15,14 +14,12 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     public float gravity = -9.81f;
 
-    void Update()
-    {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+    void Update() {
+        // isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if (isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f;
-        }
+        // if (isGrounded && velocity.y < 0) {
+        velocity.y = -2f;
+        // }
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
