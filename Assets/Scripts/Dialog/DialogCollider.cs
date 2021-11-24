@@ -6,7 +6,7 @@ using DreamTeam.Lighthouse.Core.Events;
 public class DialogCollider : MonoBehaviour
 {
     [SerializeField]
-    private DialogScriptableObject dialog;
+    private List<DialogScriptableObject> dialogs;
     public bool isActive;
     private EventController eventController;
     void Start()
@@ -19,7 +19,10 @@ public class DialogCollider : MonoBehaviour
         if (other.gameObject.tag == "Player" && isActive)
         {
             print("DialogueCollider");
-            eventController.AddEvent(new DialogueEvent(dialog));
+            foreach (var dialog in dialogs)
+            {
+                eventController.AddEvent(new DialogueEvent(dialog));
+            }
             isActive = false;
         }
     }

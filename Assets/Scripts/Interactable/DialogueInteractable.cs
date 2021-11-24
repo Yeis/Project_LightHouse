@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using DreamTeam.Lighthouse.Core.Events;
 
-public class DialogueInteractable : MonoBehaviour, Interactable {
-    public DialogScriptableObject dialog;
+public class DialogueInteractable : MonoBehaviour, Interactable
+{ 
+    public List<DialogScriptableObject> dialogs;
     private EventController eventController;
 
     void Start() {
@@ -13,7 +14,10 @@ public class DialogueInteractable : MonoBehaviour, Interactable {
 
     public void InteractWith(GameObject player) {
         Debug.Log("Interacting with Note");
-        eventController.AddEvent(new DialogueEvent(dialog));
+        foreach (var dialog in dialogs)
+        {
+            eventController.AddEvent(new DialogueEvent(dialog));
+        }
     }
 
     public string GetInteractionText() {
