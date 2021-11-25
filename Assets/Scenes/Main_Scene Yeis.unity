@@ -9915,6 +9915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pier (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1938468777885793786, guid: 567d9e7b3ae53f64a87302bce345f7f7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567d9e7b3ae53f64a87302bce345f7f7, type: 3}
 --- !u!1001 &1164959556
@@ -10326,6 +10330,10 @@ PrefabInstance:
     - target: {fileID: 1938468777885793786, guid: 567d9e7b3ae53f64a87302bce345f7f7, type: 3}
       propertyPath: m_Name
       value: Pier (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938468777885793786, guid: 567d9e7b3ae53f64a87302bce345f7f7, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567d9e7b3ae53f64a87302bce345f7f7, type: 3}
