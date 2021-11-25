@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5069818465991760211, guid: 17076a7e8185cb642afae53d665e1d07, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 8625343374930522020}
     - target: {fileID: 5069818465991760300, guid: 17076a7e8185cb642afae53d665e1d07, type: 3}
       propertyPath: m_Name
       value: Player_Yeis
@@ -235,5 +239,10 @@ PrefabInstance:
 --- !u!4 &6423727011734049570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5069818465991760209, guid: 17076a7e8185cb642afae53d665e1d07, type: 3}
+  m_PrefabInstance: {fileID: 2269309151578081907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8625343374930522020 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7551785333006427607, guid: 17076a7e8185cb642afae53d665e1d07, type: 3}
   m_PrefabInstance: {fileID: 2269309151578081907}
   m_PrefabAsset: {fileID: 0}

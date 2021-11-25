@@ -9,17 +9,26 @@ public class PlayerMovement : MonoBehaviour {
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    public GameObject spawnPoint;
 
     Vector3 velocity;
     bool isGrounded;
     public float gravity = -9.81f;
 
     void Update() {
-        // isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        // if (isGrounded && velocity.y < 0) {
-        velocity.y = -2f;
-        // }
+        if (isGrounded && velocity.y < 0) {
+            velocity.y = -2f;
+        }
+
+        // falling check
+        if (transform.position.y < -35) {
+            CharacterController characterController = GetComponent<CharacterController>();
+            characterController.enabled = false;
+            transform.position = new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y + 2, spawnPoint.transform.position.z);
+            characterController.enabled = true;
+        }
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
