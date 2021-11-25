@@ -7,7 +7,7 @@ public class BoatController : MonoBehaviour, Interactable {
     public GameObject player;
 
     [SerializeField]
-    private BoatMovement movementController;
+    public BoatMovement movementController;
     [SerializeField]
     public GameObject pier;
 

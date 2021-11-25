@@ -579,7 +579,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45be5430cfc51d540a43f255bd308dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogs: []
+  dialogs:
+  - {fileID: 11400000, guid: a2846f5804a40494cbe5001dc77bec8e, type: 2}
+  - {fileID: 11400000, guid: 0d53f6fd02c503b4aa8168d47e4b0832, type: 2}
 --- !u!1 &760360745773125991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1136,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3705733990406797516, guid: 83a93dab81577c34ab9bcac3135b1572, type: 3}
+      propertyPath: buttonNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705733990406797516, guid: 83a93dab81577c34ab9bcac3135b1572, type: 3}
+      propertyPath: audios.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705733990406797516, guid: 83a93dab81577c34ab9bcac3135b1572, type: 3}
+      propertyPath: dialogs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705733990406797516, guid: 83a93dab81577c34ab9bcac3135b1572, type: 3}
+      propertyPath: audios.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 39161f4d08beb3b4983348b87b35ad8f, type: 2}
+    - target: {fileID: 3705733990406797516, guid: 83a93dab81577c34ab9bcac3135b1572, type: 3}
+      propertyPath: dialogs.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: bec3eedbe1a720142ba350cf7f5359e1, type: 2}
     - target: {fileID: 5840934670273603511, guid: 83a93dab81577c34ab9bcac3135b1572, type: 3}
       propertyPath: m_Name
       value: Fix_Button

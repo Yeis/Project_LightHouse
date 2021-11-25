@@ -4,14 +4,12 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class UIController : MonoBehaviour
-{
+public class UIController : MonoBehaviour {
     public TextMeshProUGUI textDisplay;
 
     private Animator animator;
 
-    void Start()
-    {
+    void Start() {
         animator = GetComponent<Animator>();
     }
 
@@ -31,12 +29,13 @@ public class UIController : MonoBehaviour
         animator.SetTrigger("FadeOut");
     }
 
-    IEnumerator Type(DialogScriptableObject dialog)
-    {
-        for (int i = 0; i < dialog.sentences.Count; i++)
-        {
-            foreach (char letter in dialog.sentences[i].ToCharArray())
-            {
+    public void BlackOut() {
+        animator.SetTrigger("BlackOut");
+    }
+
+    IEnumerator Type(DialogScriptableObject dialog) {
+        for (int i = 0; i < dialog.sentences.Count; i++) {
+            foreach (char letter in dialog.sentences[i].ToCharArray()) {
                 textDisplay.text += letter;
                 yield return new WaitForSeconds(dialog.textSpeed);
             }
