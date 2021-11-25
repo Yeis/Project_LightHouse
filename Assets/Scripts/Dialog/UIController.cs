@@ -14,7 +14,7 @@ public class UIController : MonoBehaviour {
     }
 
     public void DisplayDialog(DialogScriptableObject dialog) {
-        textDisplay.fontSize = dialog.fontSize;
+        // textDisplay.fontSize = dialog.fontSize;
         textDisplay.font = dialog.fontAsset;
         StartCoroutine(Type(dialog));
         //Clear up after text
