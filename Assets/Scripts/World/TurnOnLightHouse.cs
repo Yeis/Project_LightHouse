@@ -11,6 +11,7 @@ public class TurnOnLightHouse : MonoBehaviour, Interactable
     public List<AudioScriptableObject> audios;
 
     private EventController eventController;
+    private UIController uIController;
     public AudioSource audioSource;
     private Animator animator;
 
@@ -18,6 +19,7 @@ public class TurnOnLightHouse : MonoBehaviour, Interactable
     void Start()
     {
         eventController = GameObject.FindGameObjectWithTag("EventController").GetComponent<EventController>();
+        uIController = GameObject.FindGameObjectWithTag("UI").GetComponent<UIController>();
         animator =  GetComponent<Animator>();
     }
 
@@ -40,6 +42,11 @@ public class TurnOnLightHouse : MonoBehaviour, Interactable
         foreach (DialogScriptableObject dialog in dialogs)
         {
             eventController.AddEvent(new DialogueEvent(dialog));
+        }
+        if(buttonNumber == 2) {
+            uIController.FadeIn();
+            //mover al barco
+            uIController.FadeOut();
         }
         //Final
         if(buttonNumber == 3) {
