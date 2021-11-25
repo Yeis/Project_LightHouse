@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: SeaDialogue_2
   m_EditorClassIdentifier: 
   sentences:
-  - 'My father used to tell me '
-  - 'Lighthouses not only help boats to get to the mainland '
-  - 'They also help humanity to keep the darkness at bay '
-  - 'Without lighthouses ..... '
-  - 'The darkness would consume everything '
+  - My father used to tell me that lighthouses
+  - not only help boats get to their destination,
+  - they also help humanity to keep darkness at bay.
+  - 'Without lighthouses... '
+  - Darkness would consume everything.
   textSpeed: 0.06
   timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}
