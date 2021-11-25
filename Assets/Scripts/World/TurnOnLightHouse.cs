@@ -6,11 +6,12 @@ using DreamTeam.Lighthouse.Core.Events;
 public class TurnOnLightHouse : MonoBehaviour, Interactable
 {
     public int buttonNumber;
-    public GameObject lightHouseLight;
+    public List<GameObject> objectsToActive;
     public List<DialogScriptableObject> dialogs;
     public List<AudioScriptableObject> audios;
 
     private EventController eventController;
+    public AudioSource audioSource;
     private Animator animator;
 
     // Start is called before the first frame update
@@ -24,8 +25,10 @@ public class TurnOnLightHouse : MonoBehaviour, Interactable
     {
         //ALways trigger animation
         animator.SetTrigger("FixLightHouse");
-        lightHouseLight.SetActive(true);
-
+        foreach (var go in objectsToActive)
+        {
+            go.SetActive(true);
+        }
         //Primer Faro entonces el orden de acciones es
         //1- Prender Faro
         //2- Audio
@@ -37,6 +40,11 @@ public class TurnOnLightHouse : MonoBehaviour, Interactable
         foreach (DialogScriptableObject dialog in dialogs)
         {
             eventController.AddEvent(new DialogueEvent(dialog));
+        }
+        //Final
+        if(buttonNumber == 3) {
+            eventController.AddEvent(new EndEvent());
+            audioSource.pitch = 0.2f;
         }
 
         // if(buttonNumber == 1) {

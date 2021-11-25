@@ -2587,7 +2587,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'By: George, Kieves & Yeis'
+  m_text: 'By: George, Kieves, Yeis & Chabeat'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}
   m_sharedMaterial: {fileID: 3000898648188686061, guid: 739579920829d6d4a8a012620069bbc4, type: 2}
