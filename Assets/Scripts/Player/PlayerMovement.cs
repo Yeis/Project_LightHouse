@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         // falling check
-        if (transform.position.y < -35) {
+        if (transform.position.y < -65) {
             CharacterController characterController = GetComponent<CharacterController>();
             characterController.enabled = false;
             transform.position = new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y + 2, spawnPoint.transform.position.z);

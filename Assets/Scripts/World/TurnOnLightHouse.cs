@@ -16,17 +16,22 @@ public class TurnOnLightHouse : MonoBehaviour, Interactable {
 
     public GameObject player;
     public GameObject boat;
+    private bool isActive;
 
     // Start is called before the first frame update
     void Start() {
         eventController = GameObject.FindGameObjectWithTag("EventController").GetComponent<EventController>();
         uIController = GameObject.FindGameObjectWithTag("UI").GetComponent<UIController>();
         animator = GetComponent<Animator>();
+        isActive = true;
     }
 
     public void InteractWith(GameObject player) {
         //ALways trigger animation
         animator.SetTrigger("FixLightHouse");
+
+        //Only activate buttons once
+        if(!isActive) return;
         foreach (var go in objectsToActive) {
             go.SetActive(true);
         }
@@ -61,23 +66,10 @@ public class TurnOnLightHouse : MonoBehaviour, Interactable {
         }
         //Final
         if (buttonNumber == 3) {
+            audioSource.pitch = 0.3f;
             eventController.AddEvent(new EndEvent());
-            audioSource.pitch = 0.2f;
         }
-
-        // if(buttonNumber == 1) {
-        //     foreach (AudioScriptableObject audio in audios)
-        //     {
-        //         eventController.AddEvent(new AudioEvent(audio));
-        //     }
-        //     foreach (DialogScriptableObject dialog in dialogs)
-        //     {
-        //         eventController.AddEvent(new DialogueEvent(dialog));
-        //     }
-        // //
-        // } else if(buttonNumber == 2) {
-
-        // }
+        isActive = false;
     }
 
     public string GetInteractionText() {

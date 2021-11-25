@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 5464c15ff9c6ca04cb5790c1773e76fa, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 548620034f1ca2d45b0b65f20987bf17, type: 2}
   m_HaloStrength: 0
   m_FlareStrength: 0
   m_FlareFadeSpeed: 3
@@ -365,6 +365,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 100, y: 100, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &40162553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2093078653513546688, guid: 6409a952010034446ace32584e44c4b2, type: 3}
+  m_PrefabInstance: {fileID: 126348846}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &45342812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -530,7 +535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &68532841
 Transform:
   m_ObjectHideFlags: 0
@@ -539,7 +544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68532840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.3, y: -14.07, z: 2.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1538839737}
@@ -658,6 +663,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree
@@ -1082,6 +1091,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5528958691140437792, guid: 1da7b9a30b3177848ab381f08bffe953, type: 3}
+      propertyPath: boat
+      value: 
+      objectReference: {fileID: 163957770}
+    - target: {fileID: 5528958691140437792, guid: 1da7b9a30b3177848ab381f08bffe953, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 202231615}
     - target: {fileID: 5528958691140437792, guid: 1da7b9a30b3177848ab381f08bffe953, type: 3}
       propertyPath: buttonNumber
       value: 2
@@ -1617,6 +1634,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree
@@ -2527,6 +2548,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (2)
@@ -3616,7 +3641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6334829642170900871, guid: d7cf025a189719e4682b1938f9e84d3c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 13.489655
+      value: 18.211035
       objectReference: {fileID: 0}
     - target: {fileID: 6334829642170900871, guid: d7cf025a189719e4682b1938f9e84d3c, type: 3}
       propertyPath: m_LocalScale.y
@@ -3628,7 +3653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6334829642170900871, guid: d7cf025a189719e4682b1938f9e84d3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -726.99
+      value: -707.8
       objectReference: {fileID: 0}
     - target: {fileID: 6334829642170900871, guid: d7cf025a189719e4682b1938f9e84d3c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3636,7 +3661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6334829642170900871, guid: d7cf025a189719e4682b1938f9e84d3c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 668.66
+      value: 507.3
       objectReference: {fileID: 0}
     - target: {fileID: 6334829642170900871, guid: d7cf025a189719e4682b1938f9e84d3c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5123,6 +5148,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (4)
@@ -5197,6 +5226,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (9)
@@ -5558,7 +5591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &571061848
 Light:
   m_ObjectHideFlags: 0
@@ -6181,6 +6214,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 38.1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (12)
@@ -8740,6 +8777,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 38.1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (1)
@@ -9177,6 +9218,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 38.1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (11)
@@ -10265,6 +10310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (2)
@@ -10984,6 +11033,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (7)
@@ -11750,6 +11803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (5)
@@ -12814,6 +12871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (3)
@@ -12871,6 +12932,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (9)
@@ -13502,6 +13567,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (6)
@@ -14040,6 +14109,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 38.1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (8)
@@ -14191,6 +14264,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (10)
@@ -15737,6 +15814,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 38.1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (4)
@@ -15889,7 +15970,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsBetweenReview: 1
-  introDialogs: []
+  introDialogs:
+  - {fileID: 11400000, guid: 7f5f38157de3c9447b14aed6187c0081, type: 2}
 --- !u!4 &1619733479
 Transform:
   m_ObjectHideFlags: 0
@@ -16470,6 +16552,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (1)
@@ -16537,6 +16623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 38.1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (7)
@@ -17344,6 +17434,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (6)
@@ -18231,6 +18325,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (3)
@@ -18355,6 +18453,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (8)
@@ -19593,6 +19695,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 919132149155446097, guid: 305048166254a4a45ba1e9559dda17a2, type: 3}
       propertyPath: m_Name
       value: Palmtree (5)
@@ -21166,6 +21272,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1944262736}
     - target: {fileID: 834569432, guid: 567d9e7b3ae53f64a87302bce345f7f7, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 40162553}
+    - target: {fileID: 834569432, guid: 567d9e7b3ae53f64a87302bce345f7f7, type: 3}
       propertyPath: movementController
       value: 
       objectReference: {fileID: 163957774}
@@ -21503,6 +21613,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5526295359821353933, guid: 1da7b9a30b3177848ab381f08bffe953, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 6470564079198360063, guid: 1da7b9a30b3177848ab381f08bffe953, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
+    - target: {fileID: 6470564079198360063, guid: 1da7b9a30b3177848ab381f08bffe953, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da7b9a30b3177848ab381f08bffe953, type: 3}
 --- !u!1001 &8625343374453240246
@@ -21516,6 +21638,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 116
       objectReference: {fileID: 0}
+    - target: {fileID: 7513620290253157716, guid: b56409c6b0cde664595b5a41c801166f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 383635273793235458244aedb717f538, type: 2}
     - target: {fileID: 8306117279429121153, guid: b56409c6b0cde664595b5a41c801166f, type: 3}
       propertyPath: m_Name
       value: Boat
@@ -21534,7 +21660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8651011384712826427, guid: b56409c6b0cde664595b5a41c801166f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -525.9
+      value: -360.4
       objectReference: {fileID: 0}
     - target: {fileID: 8651011384712826427, guid: b56409c6b0cde664595b5a41c801166f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21542,7 +21668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8651011384712826427, guid: b56409c6b0cde664595b5a41c801166f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 377
+      value: -204.2
       objectReference: {fileID: 0}
     - target: {fileID: 8651011384712826427, guid: b56409c6b0cde664595b5a41c801166f, type: 3}
       propertyPath: m_LocalRotation.w
