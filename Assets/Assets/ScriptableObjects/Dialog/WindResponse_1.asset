@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WindResponse_1
   m_EditorClassIdentifier: 
   sentences:
-  - 'That voice, it has to be '
-  - 'Father???,  '
-  - 'but you have been gone '
+  - That voice, it has to be...
+  - Dad???
+  - Is it really you?
   textSpeed: 0.02
   timeBetweenLines: 3
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}

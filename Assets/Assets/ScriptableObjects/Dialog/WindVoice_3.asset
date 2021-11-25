@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: WindVoice_3
   m_EditorClassIdentifier: 
   sentences:
-  - 'You have to end the work  '
-  - 'You have to son '
+  - You have to finish the job
+  - 'You have to, son '
   textSpeed: 0.1
   timeBetweenLines: 2
   fontAsset: {fileID: 11400000, guid: 8c2ba8e31d35f174ca5921aca1502cd5, type: 2}

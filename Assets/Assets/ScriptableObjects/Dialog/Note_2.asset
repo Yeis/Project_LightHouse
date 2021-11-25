@@ -16,11 +16,11 @@ MonoBehaviour:
   - 'Something odd has been happening lately '
   - 'The lighthouse always stops working at the same time at night '
   - 'There is nothing I can do, it gets so dark '
-  - 'I cannot even see my own hands '
+  - 'I can''t even see my hands '
   - 'Then I hear it, something close '
   - 'Speaking to me from the bottom of the sea '
   - 'It gets so damn dark '
-  - 'If someone reads this note '
+  - 'If anyone finds and reads this note '
   textSpeed: 0.08
   timeBetweenLines: 1.5
   fontAsset: {fileID: 11400000, guid: 7cdd8fafd24559648bbc4591d3a516c0, type: 2}

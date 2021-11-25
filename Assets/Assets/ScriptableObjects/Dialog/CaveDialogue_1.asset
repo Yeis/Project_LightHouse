@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - 'What is this place.... '
-  - "I didn\u2019t know it exists "
+  - "I didn\u2019t even know it existed"
   textSpeed: 0.06
   timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}

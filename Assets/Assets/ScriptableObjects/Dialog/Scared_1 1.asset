@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scared_1 1
   m_EditorClassIdentifier: 
   sentences:
-  - 'What in the seven seas was that!!!! '
+  - Holy mother of Venus WHAT WAS THAT
   textSpeed: 0.1
   timeBetweenLines: 2
   fontAsset: {fileID: 11400000, guid: d51dbe9c698cd354cb36061ce4546181, type: 2}

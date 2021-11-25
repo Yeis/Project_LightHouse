@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Note_2_Scared
   m_EditorClassIdentifier: 
   sentences:
-  - 'Please,,,, leave '
+  - Please... abandon this forsaken place
   textSpeed: 0.1
   timeBetweenLines: 2
   fontAsset: {fileID: 11400000, guid: d51dbe9c698cd354cb36061ce4546181, type: 2}

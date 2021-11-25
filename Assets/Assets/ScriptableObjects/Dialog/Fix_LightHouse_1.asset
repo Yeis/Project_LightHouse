@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - "But it is my family\u2019s duty "
-  - "Nobody should get lost, it doesn\u2019t matter the time. "
+  - I need to maintain this guiding light at all times.
   textSpeed: 0.06
   timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}

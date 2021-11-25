@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: IntoductionDialogue 1
   m_EditorClassIdentifier: 
   sentences:
-  - My father always told me stories about the work...
+  - My father would always tell me stories about his work...
   - A working lighthouse can be the difference
-  - between a sailor's hope
-  - 'and  his madness '
+  - between a sailor's hope and their despair
   textSpeed: 0.06
   timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}

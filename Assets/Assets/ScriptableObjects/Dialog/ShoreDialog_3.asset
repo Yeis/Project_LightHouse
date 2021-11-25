@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: ShoreDialog_3
   m_EditorClassIdentifier: 
   sentences:
-  - 'I remember '
-  - ' the light keeper used to talk about mushrooms '
-  - 'And their luminous properties '
+  - 'I remember the light keeper used to talk about mushrooms '
+  - 'and their luminous properties '
   textSpeed: 0.02
   timeBetweenLines: 3
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}

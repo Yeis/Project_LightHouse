@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: CaveDialogue_2
   m_EditorClassIdentifier: 
   sentences:
-  - I cannot back down any longer
-  - 'It is on my blood  '
-  - 'I have to end this duty '
+  - I cannot hide from this any longer
+  - 'It is in my blood  '
+  - 'I have to fulfill my duty '
   textSpeed: 0.1
   timeBetweenLines: 2
   fontAsset: {fileID: 11400000, guid: d51dbe9c698cd354cb36061ce4546181, type: 2}

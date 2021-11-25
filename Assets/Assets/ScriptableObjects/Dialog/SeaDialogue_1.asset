@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: SeaDialogue_1
   m_EditorClassIdentifier: 
   sentences:
-  - 'So  weird..., '
+  - So weird...
   - "It\u2019s the first time that all three lighthouses have stopped working  "
-  - "But it is my family\u2019s duty "
-  - "Nobody should get lost, it doesn\u2019t matter the time. "
+  - "at the same time. But it is my family\u2019s duty "
+  - I need to maintain this guiding light at all times.
   textSpeed: 0.06
   timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}

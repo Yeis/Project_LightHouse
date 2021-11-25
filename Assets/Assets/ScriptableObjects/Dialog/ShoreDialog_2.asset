@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - 'How long have I been fixing these lights? '
-  - 'Seems like a ten lives since my father taught me the trade '
+  - Seems like it's been ten lifetimes since my father showed me the ropes
   - 'We used to come together to fix the lights all the time '
-  - We used to....
+  - God, I miss him.
   textSpeed: 0.02
   timeBetweenLines: 3
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}

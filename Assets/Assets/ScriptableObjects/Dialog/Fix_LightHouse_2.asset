@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Fix_LightHouse_2
   m_EditorClassIdentifier: 
   sentences:
-  - 'What am I doing here, did I just fall asleep '
-  - " I don\u2019t remember getting into the boat "
-  - What are these noises
-  - "I\u2019m not crazy "
+  - What just happened? Why am here?
+  - " I don\u2019t remember getting back on the boat "
+  - What are these noises?
+  - Am I going insane?
   textSpeed: 0.06
   timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}

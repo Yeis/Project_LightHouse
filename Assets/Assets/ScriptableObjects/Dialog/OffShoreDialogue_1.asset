@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: OffShoreDialogue_1
   m_EditorClassIdentifier: 
   sentences:
-  - 'Where is the light keeper he has always been lazy '
-  - 'But leaving his guard in the middle of the night '
+  - 'Where is the other light keeper? He''s always been lazy '
+  - But to leave his post in the middle of the night...?
   textSpeed: 0.06
   timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}
