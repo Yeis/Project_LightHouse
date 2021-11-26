@@ -17,7 +17,7 @@ MonoBehaviour:
   - Dad???
   - Is it really you?
   textSpeed: 0.02
-  timeBetweenLines: 3
+  timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 739579920829d6d4a8a012620069bbc4, type: 2}
   fontSize: 28
   hasEnded: 0

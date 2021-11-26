@@ -16,8 +16,8 @@ MonoBehaviour:
   - "You don\u2019t have much time left "
   - 'You have to finish '
   - 'It is your duty '
-  textSpeed: 0.1
-  timeBetweenLines: 2
+  textSpeed: 0.05
+  timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 8c2ba8e31d35f174ca5921aca1502cd5, type: 2}
   fontSize: 40
   hasEnded: 0

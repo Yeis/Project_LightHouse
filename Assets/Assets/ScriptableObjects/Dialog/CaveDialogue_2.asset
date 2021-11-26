@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - I cannot hide from this any longer
-  - 'It is in my blood  '
   - 'I have to fulfill my duty '
   textSpeed: 0.1
   timeBetweenLines: 2

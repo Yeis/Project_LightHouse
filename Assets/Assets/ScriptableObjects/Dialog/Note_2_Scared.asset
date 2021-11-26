@@ -15,7 +15,7 @@ MonoBehaviour:
   sentences:
   - Please... abandon this forsaken place
   textSpeed: 0.1
-  timeBetweenLines: 2
+  timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: d51dbe9c698cd354cb36061ce4546181, type: 2}
   fontSize: 32
   hasEnded: 0

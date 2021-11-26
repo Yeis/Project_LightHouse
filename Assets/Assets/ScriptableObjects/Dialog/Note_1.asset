@@ -16,7 +16,7 @@ MonoBehaviour:
   - Without the lighthouse in working condition,
   - all hope is lost. What took you so long?
   textSpeed: 0.08
-  timeBetweenLines: 1.5
+  timeBetweenLines: 1
   fontAsset: {fileID: 11400000, guid: 7cdd8fafd24559648bbc4591d3a516c0, type: 2}
   fontSize: 40
   hasEnded: 0
